@@ -1,0 +1,53 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <context-param>
+    <param-name>URL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>s1</servlet-name>
+    <servlet-class>com.yili.service.s1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s1</servlet-name>
+    <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>com.yili.service.s2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s2</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>gp</servlet-name>
+    <servlet-class>com.yili.service.ServletDemo03</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gp</servlet-name>
+    <url-pattern>/gp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s4</servlet-name>
+    <servlet-class>com.yili.service.ServletDemo04</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s4</servlet-name>
+    <url-pattern>/s4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s5</servlet-name>
+    <servlet-class>com.yili.service.ServletDemo05</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s5</servlet-name>
+    <url-pattern>/s5</url-pattern>
+  </servlet-mapping>
+</web-app>
