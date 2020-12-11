@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class SessionServlet extends HttpServlet {
+public class SessionServletTest extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -16,16 +16,11 @@ public class SessionServlet extends HttpServlet {
         resp.setContentType("text/html;character=utf-8");
 
         HttpSession session = req.getSession();
-        session.setAttribute("name","yili");
+        String name = session.getAttribute("name").toString();
 
-        String sessionId = session.getId();
+        resp.getWriter().write(name);
 
-        if(session.isNew()){
-            resp.getWriter().write("success!!!!");
-        }else {
-            resp.getWriter().write("ID"+sessionId);
-            resp.getWriter().write(session.getAttribute("name")+"");
-        }
+
 
     }
 

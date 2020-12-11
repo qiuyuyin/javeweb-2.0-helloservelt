@@ -14,7 +14,7 @@
         <servlet-name>file</servlet-name>
         <url-pattern>/file</url-pattern>
     </servlet-mapping>
-
+    /home/yili/IdeaProjects/javaweb_maven2/webapps/javeweb-2.0-helloservelt/servlet-03/target
     <servlet>
         <servlet-name>image</servlet-name>
         <servlet-class>com.yili.servlet.ImageServlet</servlet-class>
@@ -50,4 +50,28 @@
         <servlet-name>cokkies</servlet-name>
         <url-pattern>/cokkies</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>session</servlet-name>
+        <servlet-class>com.yili.servlet.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>session</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session_test</servlet-name>
+        <servlet-class>com.yili.servlet.SessionServletTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>session_test</servlet-name>
+        <url-pattern>/session_test</url-pattern>
+    </servlet-mapping>
+
+
+
+    <session-config>
+        <session-timeout>1440</session-timeout>
+    </session-config>
 </web-app>
