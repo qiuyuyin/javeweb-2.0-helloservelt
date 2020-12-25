@@ -5,12 +5,18 @@
     <file type="web" url="file://$PROJECT_DIR$/servlet-02" />
     <file type="web" url="file://$PROJECT_DIR$/servlet-03" />
     <file type="web" url="file://$PROJECT_DIR$/servlet-04" />
+    <file type="web" url="file://$PROJECT_DIR$/servlet-06" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/servlet-05/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="15" project-jdk-type="JavaSDK" />
